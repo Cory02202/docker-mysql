@@ -29,7 +29,7 @@ mysql> mysql
 mysql> exit
 Bye
 
-% docker run -it --name test-world-mysql -e MYSQL_ROOT_PASSWORD=mysql -d mysql:latest
+% docker run -it --name test-world-mysql -e MYSQL_ROOT_PASSWORD=**** -d mysql:latest
 5f82967e343c7a1a6dd6f5f6d8bd701b1a434c48994ad0333c45c026f2927b06
 
 % docker exec -it test-world-mysql bash -p

@@ -8,7 +8,7 @@ Digest: sha256:4fcf5df6c46c80db19675a5c067e737c1bc8b0e78e94e816a778ae2c6577213d
 Status: Image is up to date for mysql:latest
 docker.io/library/mysql:latest
 
-% docker run -it --name test-world-mysql -e MYSQL_ROOT_PASSWOED=mysql -d mysql:latest
+% docker run -it --name test-world-mysql -e MYSQL_ROOT_PASSWOED=<Password> -d mysql:latest
 62877f31f6492aa5a5e0de9c578aedc1f439361bdb04a22373d6529b0cca2b80
 
 % mysql -u root -p -h 127.0.0.1
@@ -29,7 +29,7 @@ mysql> mysql
 mysql> exit
 Bye
 
-% docker run -it --name test-world-mysql -e MYSQL_ROOT_PASSWORD=**** -d mysql:latest
+% docker run -it --name test-world-mysql -e MYSQL_ROOT_PASSWORD=<Password> -d mysql:latest
 5f82967e343c7a1a6dd6f5f6d8bd701b1a434c48994ad0333c45c026f2927b06
 
 % docker exec -it test-world-mysql bash -p
